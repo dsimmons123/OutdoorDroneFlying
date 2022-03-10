@@ -31,14 +31,14 @@ tello.move_forward(250)
 sleep(2)
 
 #turn towards cafeteria
-tello.rotate_counter_clockwise(90)
+tello.rotate_counter_clockwise(135)
 time.sleep(2)
 
 #photo
 cv2.imwrite("picture.png", frame_read.frame)
 
 #turn to library
-tello.rotate_counter_clockwise(90)
+tello.rotate_counter_clockwise(45)
 sleep(2)
 
 #fly forward 116 feet
@@ -60,6 +60,9 @@ tello.move_up(500)
 sleep(.005)
 tello.move_up(500)
 sleep(.005)
+
+#turn towards library
+tello.rotate_counter_clockwise(35)
 
 #take photo
 cv2.imwrite("picture2.png", frame_read.frame)
