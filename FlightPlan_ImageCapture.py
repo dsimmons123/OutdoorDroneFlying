@@ -8,8 +8,6 @@ tello = Tello()
 tello.connect()
 print(tello.get_battery())
 
-
-
 #take off 6 feet
 tello.takeoff()
 tello.move_up(91)
