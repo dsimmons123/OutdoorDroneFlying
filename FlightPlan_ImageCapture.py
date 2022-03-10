@@ -58,7 +58,7 @@ sleep(2)
 #move up to middle school library
 tello.move_up(500)
 sleep(.005)
-tello.move_up(500)
+tello.move_up(300)
 sleep(.005)
 
 #turn towards library
