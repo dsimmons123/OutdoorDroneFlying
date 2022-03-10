@@ -76,9 +76,5 @@ sleep(2)
 #take photo
 cv2.imwrite("picture.png", frame_read.frame)
 
-#flip
-tello.flip_backward
-sleep(2)
-
 tello.land()
 tello.end()
