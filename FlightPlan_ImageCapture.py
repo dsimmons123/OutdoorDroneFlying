@@ -8,8 +8,7 @@ tello = Tello()
 tello.connect()
 print(tello.get_battery())
 
-tello.streamon()
-frame_read = tello.get_frame_read()
+
 
 #take off 6 feet
 tello.takeoff()
@@ -33,6 +32,9 @@ sleep(2)
 #turn towards cafeteria
 tello.rotate_counter_clockwise(135)
 time.sleep(2)
+
+tello.streamon()
+frame_read = tello.get_frame_read()
 
 #photo
 cv2.imwrite("picture.png", frame_read.frame)
