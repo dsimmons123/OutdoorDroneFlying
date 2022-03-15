@@ -11,7 +11,7 @@ print(tello.get_battery())
 #take off 6 feet
 tello.takeoff()
 tello.move_up(91)
-time.sleep(2)
+sleep(2)
 
 #fly forward 116 feet
 tello.move_forward(500)
@@ -29,7 +29,7 @@ sleep(2)
 
 #turn towards cafeteria
 tello.rotate_counter_clockwise(135)
-time.sleep(2)
+sleep(2)
 
 tello.streamon()
 frame_read = tello.get_frame_read()
