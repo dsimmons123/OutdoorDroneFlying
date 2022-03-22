@@ -58,14 +58,13 @@ sleep(2)
 #move up to middle school library
 tello.move_up(500)
 sleep(.5)
-tello.move_up(300)
-sleep(.5)
 
 #turn towards library
-tello.rotate_counter_clockwise(35)
+tello.rotate_counter_clockwise(115)
 
 #take photo
 cv2.imwrite("picture2.png", frame_read.frame)
 
+tello.flip_forward()
 tello.land()
 tello.end()
